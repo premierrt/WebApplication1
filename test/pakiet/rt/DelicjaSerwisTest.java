@@ -46,7 +46,7 @@ public class DelicjaSerwisTest {
         System.out.println("getSimpleResponeFromDelicje");
         String expResult = "";
         String result = DelicjaSerwis.getSimpleResponeFromDelicje();
-        
+        System.out.println(result);
        // assertEquals(expResult, result);
         assertNotNull(result);
         // TODO review the generated test code and remove the default call to fail.

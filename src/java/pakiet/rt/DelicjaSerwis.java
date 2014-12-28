@@ -31,6 +31,7 @@ public class DelicjaSerwis {
                 if (result.getDataAsObject(delicious.bookmarkingservice.deliciousresponse.Posts.class) instanceof delicious.bookmarkingservice.deliciousresponse.Posts) {
                     delicious.bookmarkingservice.deliciousresponse.Posts resultObj = result.getDataAsObject(delicious.bookmarkingservice.deliciousresponse.Posts.class);
                 }
+                System.out.println(result.getDataAsString());
                 return "The SaasService returned: "+result.getDataAsString();
     }
     
