@@ -51,4 +51,14 @@ public class DeliciousBookmarkingService {
         sleep(1000);
         return conn.get(null);
     }
+    
+    
+    public static RestResponse getPosts( String tag, String dt, String url, String hashes, String meta) throws IOException {
+        DeliciousBookmarkingServiceAuthenticator.login();
+        String[][] pathParams = new String[][]{};
+        String[][] queryParams = new String[][]{{"tag", tag}, {"dt", dt}, {"url", url}, {"hashes", hashes}, {"meta", meta}};
+        RestConnection conn = new RestConnection("http://api.del.icio.us/v1/posts/get", pathParams, queryParams);
+        sleep(1000);
+        return conn.get(null);
+    }
 }

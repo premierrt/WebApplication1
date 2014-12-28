@@ -83,6 +83,10 @@ public class DeliciousBookmarkingServiceAuthenticator extends Authenticator {
         }
         
     }
+    public static void login(){
+                    Authenticator.setDefault(new DeliciousBookmarkingServiceAuthenticator(appUsername, appPassword));
+
+    }
     
     private DeliciousBookmarkingServiceAuthenticator(String username, String password) {
         this.username = username;
