@@ -15,6 +15,8 @@
         <h1>bujac to my panowie szlachta!</h1>
         <h3>
             Msg : ${msg}
+            user : ${user}
+
             
         </h3>
     </body>

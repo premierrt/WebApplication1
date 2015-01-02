@@ -32,7 +32,8 @@ public class DelicjaSerwis {
                     delicious.bookmarkingservice.deliciousresponse.Posts resultObj = result.getDataAsObject(delicious.bookmarkingservice.deliciousresponse.Posts.class);
                 }
                 System.out.println(result.getDataAsString());
-                return "The SaasService returned: "+result.getDataAsString();
+                
+                return result.getDataAsString();
     }
     
 }
